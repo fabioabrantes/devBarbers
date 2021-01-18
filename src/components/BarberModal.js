@@ -76,6 +76,7 @@ const BarberModal = ({show, setShow, user, service}) => {
       month = month < 10 ? '0' + month : month; // os meses ficarão no formato 01,02,03,...
       day = day < 10 ? '0' + day : day; // os dias ficarão no formata 01,02,03,...
       let selDate = `${year}-${month}-${day}`;
+      console.log(selDate);
 
       let availability = user.available.filter((e) => e.date === selDate);
 
